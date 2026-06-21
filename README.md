@@ -96,7 +96,7 @@ npm start
 
 ## 📁 Project Structure
 
-```
+```text
 civic-collaboration-platform/
 ├── backend/                 # Python FastAPI Backend
 │   ├── app/
@@ -104,19 +104,27 @@ civic-collaboration-platform/
 │   │   ├── api/            # REST API Endpoints
 │   │   ├── core/           # Security & Config
 │   │   ├── models/         # SQLAlchemy Models
-│   │   └── schemas/        # Pydantic Schemas
+│   │   ├── repositories/   # Data Access Layer
+│   │   ├── schemas/        # Pydantic Schemas
+│   │   ├── services/       # Business Logic Layer
+│   │   └── tasks/          # Background Tasks
 │   ├── alembic/            # Database Migrations
+│   ├── scripts/            # Backend Scripts
 │   └── tests/              # Backend Tests
+├── docs/                   # Documentation
+│   ├── api/                # API Documentation
+│   ├── architecture/       # Architecture Diagrams
+│   ├── deployment/         # Deployment Guides
+│   └── user-guides/        # User Manuals
+├── infrastructure/         # Infrastructure as Code
+│   ├── ansible/            # Ansible Playbooks
+│   ├── kubernetes/         # Kubernetes manifests
+│   └── terraform/          # Terraform Modules
+├── k8s/                    # Kubernetes Deployment Configs
 ├── mobile/                 # React Native App
-│   ├── src/
-│   │   ├── screens/        # App Screens
-│   │   ├── navigation/     # Navigation Config
-│   │   ├── store/          # Redux Store
-│   │   └── api/            # API Client
-├── admin-dashboard/        # Government Admin Portal
-├── infrastructure/         # Deployment Configs
-└── docs/                   # Documentation
-
+│   ├── android/            # Android Native Code
+│   └── src/                # React Native Source Code
+└── scripts/                # Utility Scripts
 ```
 
 ## 🤖 AI Pipeline
